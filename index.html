@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Agency</title>
+  <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+  <header>
+    <h2 class="logo">Travel Agency</h2>
+    <nav class="navigation">
+      <a href="#">Stocks</a>
+      <a href="#">Booking</a>
+      <a href="#" class="search">Search</a>
+      <button class="btnLogin-popup">Login</button>
+    </nav>
+  </header>
+
+  <div class="about">
+    <div class="about-box">
+      <h2>About us</h2>
+
+      <b>Travel Agency</b>
+      <p>Это новая компания среди<br>
+        туристических агенств. <br><br>
+
+        Не смотря на то, что компания работает<br>
+        5 лет. Она смогла уже приобрести не <br>
+        малое количество поклонников.<br><br>
+
+        Наша компания является самой <br>
+        технологичной среди других.<br><br>
+
+        Тут легко найти билеты в любую точку<br>
+        мира по доступной цене в кратчайшие<br>
+        сроки. Ведь наша главная ценность не<br>
+        заработок, а довольный клиент!
+      </p>
+      <p1> Впечатлений не бывает много! </p1>
+    </div>
+  </div>
+
+  <div class="search-wrapper">
+    <span class="icon-close1"><ion-icon name="close"></ion-icon></span>
+    <div class="form-box">
+      <h2>You are not logged in</h2>
+      <form action="#">
+        <div class="input-box">
+          <span class="icon"><ion-icon name="flag"></ion-icon></span>
+          <select name="format" id="format">
+            <option selected disabled>Select a region</option>
+            <option value="ru">Russia</option>
+            <option value="en">England</option>
+            <option value="ca">Canada</option>
+            <option value="fr">France</option>
+            <option value="de">Germany</option>
+          </select>
+        </div>
+        <div class="input-box">
+          <input type="date">
+          <label>Choose date</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="people"></ion-icon></span>
+          <input type="number">
+          <label>Number of people</label>
+        </div>
+        <button type="submit" class="btn">Search</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+    <div class="form-box">
+      <h2>Login</h2>
+      <form action="#">
+        <div class="input-box">
+          <span class="icon"><ion-icon name="mail"></ion-icon></span>
+          <input type="email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+          <input type="password" required>
+          <label>Password</label>
+        </div>
+        <div class="remember-forgot">
+          <label for=""><input type="checkbox">Remember me</label>
+          <a href="#">Forgot password</a>
+        </div>
+        <button type="submit" class="btn">Login</button>
+        <div class="login-register">
+          <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
